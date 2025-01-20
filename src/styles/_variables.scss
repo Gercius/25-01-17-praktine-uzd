@@ -1,0 +1,84 @@
+/* CONTAINER */
+$container: 1020px;
+
+/* TYPOGRAPHY */
+$font-stack: "Inter", sans-serif;
+
+$typography: (
+    "body-b2": (
+        font-size: 14px,
+        font-weight: 400,
+        line-height: 20px,
+        text-align: left,
+    ),
+    "body-number": (
+        font-size: 14px,
+        font-weight: 400,
+        line-height: 20px,
+        text-align: right,
+    ),
+    "overline": (
+        font-size: 11px,
+        font-weight: 600,
+        line-height: 16px,
+        letter-spacing: 0.04em,
+        text-align: left,
+    ),
+    "subtitle-s2": (
+        font-size: 14px,
+        font-weight: 500,
+        line-height: 20px,
+        letter-spacing: 0.02em,
+        text-align: left,
+    ),
+    "caption-c1": (
+        font-size: 12px,
+        font-weight: 500,
+        line-height: 18px,
+        letter-spacing: 0.03em,
+        text-align: left,
+    ),
+    "caption-c2": (
+        font-size: 12px,
+        font-weight: 400,
+        line-height: 18px,
+        letter-spacing: 0.03em,
+        text-align: left,
+    ),
+);
+
+/* COLORS */
+// Backgrounds
+$bg-gray-100: #f9fafc;
+$bg-gray-200: #f0f1fa;
+$bg-gray-300: #e9edf5;
+$bg-gray-transparent: #f4f7fcbf;
+$bg-blue: #2264e5;
+$bg-light-green: #e1fcef;
+
+// Fonts
+$font-light: #ffffff;
+$font-dark: #171c26;
+$font-blue: #4f5aed;
+$font-red: #d12953;
+$font-green: #14804a;
+$font-gray-100: #bcc2ce;
+$font-gray-200: #a1a9b8;
+$font-gray-300: #687182;
+$font-gray-400: #464f60;
+
+// Shadows
+$shadow-1: 0px 0px 2px 0px #00000014, 0px 1px 4px 0px #454b571f, 0px 0px 0px 1px #98a1b21a;
+$shadow-2: 0px 2px 5px 0px #5960781a, 0px 0px 0px 1px #464f6029, 0px 1px 1px 0px #0000001a;
+$shadow-3: 0px 0px 0px 1px #68718229, 0px 1px 2px 0px #0000000f;
+$shadow-4: 0px 2px 5px 0px #2264e51f, 0px 0px 0px 1px #2264e5, 0px 1px 1px 0px #00000024, 0px 1px 0px 0px #4b85fa inset;
+$shadow-5: 0px 0px 0px 1px #464f603d, 0px 2px 5px 0px #5960781a, 0px 0px 0px 1px #464f6029, 0px 1px 1px 0px #0000001a;
+
+// Blurs
+$blur-1: blur(8px);
+
+/* BORDERS */
+$border-l: 10px;
+$border-m: 8px;
+$border-sm: 6px;
+$border-s: 4px;
