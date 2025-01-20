@@ -1,10 +1,11 @@
-@use "./typography.scss" as *;
+@use "./variables" as *;
+@use "sass:map";
 
 @mixin typography($style) {
-    $font: map-get($typography, $style);
-    font-size: map-get($font, font-size);
-    font-weight: map-get($font, font-weight);
-    line-height: map-get($font, line-height);
-    letter-spacing: map-get($font, letter-spacing, null);
-    text-align: map-get($font, text-align);
+    $font: map.get($typography, $style);
+    font-size: map.get($font, font-size);
+    font-weight: map.get($font, font-weight);
+    line-height: map.get($font, line-height);
+    letter-spacing: map.get($font, letter-spacing, null);
+    text-align: map.get($font, text-align);
 }

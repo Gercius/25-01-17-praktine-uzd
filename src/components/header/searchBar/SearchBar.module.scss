@@ -1,0 +1,57 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.searchBar {
+    @include typography("body-b2");
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+
+    .filterBtn {
+        background-color: $bg-light;
+        width: 40px;
+        height: 32px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $shadow-2;
+        border-radius: $border-m;
+
+        .icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    form {
+        flex-basis: 320px;
+        .searchInput {
+            height: 32px;
+            padding: 0 0.75rem;
+            background-color: $bg-light;
+            border-radius: $border-m;
+            box-shadow: $shadow-3;
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+
+            input {
+                @include typography("body-b2");
+
+                width: 100%;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

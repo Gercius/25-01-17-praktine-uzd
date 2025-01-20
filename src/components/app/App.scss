@@ -1,0 +1,9 @@
+@use "../../styles/variables" as *;
+
+#root {
+    background-color: $bg-gray-transparent;
+    margin: 0 auto;
+    border-radius: $border-l;
+    max-width: $container;
+    box-shadow: $shadow-1;
+}

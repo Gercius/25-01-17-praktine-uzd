@@ -1,0 +1,22 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+button {
+    @include typography("button");
+    background-color: $bg-blue;
+    color: $font-light;
+    box-shadow: $shadow-4;
+    border-radius: $border-m;
+    width: 146px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}

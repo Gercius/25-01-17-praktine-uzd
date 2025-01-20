@@ -1,44 +1,52 @@
 /* CONTAINER */
 $container: 1020px;
+$ct-padding: 0 10px;
 
 /* TYPOGRAPHY */
 $font-stack: "Inter", sans-serif;
 
 $typography: (
-    "body-b2": (
+    body-b2: (
         font-size: 14px,
         font-weight: 400,
         line-height: 20px,
         text-align: left,
     ),
-    "body-number": (
+    body-number: (
         font-size: 14px,
         font-weight: 400,
         line-height: 20px,
         text-align: right,
     ),
-    "overline": (
+    overline: (
         font-size: 11px,
         font-weight: 600,
         line-height: 16px,
         letter-spacing: 0.04em,
         text-align: left,
     ),
-    "subtitle-s2": (
+    button: (
         font-size: 14px,
         font-weight: 500,
         line-height: 20px,
         letter-spacing: 0.02em,
         text-align: left,
     ),
-    "caption-c1": (
+    subtitle-s2: (
+        font-size: 14px,
+        font-weight: 500,
+        line-height: 20px,
+        letter-spacing: 0.02em,
+        text-align: left,
+    ),
+    caption-c1: (
         font-size: 12px,
         font-weight: 500,
         line-height: 18px,
         letter-spacing: 0.03em,
         text-align: left,
     ),
-    "caption-c2": (
+    caption-c2: (
         font-size: 12px,
         font-weight: 400,
         line-height: 18px,
@@ -49,6 +57,7 @@ $typography: (
 
 /* COLORS */
 // Backgrounds
+$bg-light: #ffffff;
 $bg-gray-100: #f9fafc;
 $bg-gray-200: #f0f1fa;
 $bg-gray-300: #e9edf5;
