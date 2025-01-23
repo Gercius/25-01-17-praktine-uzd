@@ -1,0 +1,16 @@
+@use "../../styles/variables" as *;
+
+.button {
+    width: 24px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-gray-100;
+    box-shadow: $shadow-5;
+    border-radius: $border-sm;
+
+    &.right {
+        transform: rotate(180deg);
+    }
+}

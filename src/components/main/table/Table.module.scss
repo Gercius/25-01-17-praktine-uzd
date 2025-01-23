@@ -1,7 +1,7 @@
 @use "../../../styles/mixins" as *;
 @use "../../../styles/variables" as *;
 
-table {
+.table {
     width: 100%;
 
     input {
@@ -17,6 +17,7 @@ table {
         display: flex;
         align-items: center;
         column-gap: 20px;
+        overflow-x: auto;
 
         th:nth-of-type(6),
         th:nth-of-type(7),
@@ -25,6 +26,7 @@ table {
         td:nth-of-type(7),
         td:nth-of-type(8) {
             text-align: right;
+            min-width: 70px;
         }
 
         // Checkbox
@@ -90,7 +92,7 @@ table {
         tr {
             th {
                 @include typography("overline");
-                color: $font-gray-400;
+                color: $font-gray-500;
                 text-align: left;
                 text-transform: uppercase;
             }
@@ -115,15 +117,16 @@ table {
             align-self: flex-start;
         }
 
-        &:nth-child(2) {
-            padding-left: 0.2rem;
-        }
-
         &:nth-child(4) {
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
+    }
+
+    .spacer {
+        height: 44px;
+        width: 100%;
     }
 }

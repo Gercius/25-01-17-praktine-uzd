@@ -1,6 +1,6 @@
 @use "../../styles/variables" as *;
 
-header {
+.header {
     width: 100%;
     backdrop-filter: $blur-1;
     min-height: 64px;

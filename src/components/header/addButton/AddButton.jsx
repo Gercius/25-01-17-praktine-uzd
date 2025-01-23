@@ -3,7 +3,7 @@ import addIcon from "../../../assets/add.svg";
 
 export const AddButton = () => {
     return (
-        <button>
+        <button className={styles.button}>
             <img src={addIcon} alt="Plus sign icon" />
             Add Customer
         </button>

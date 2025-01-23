@@ -2,7 +2,8 @@
 
 #root {
     background-color: $bg-gray-transparent;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
+    position: relative;
     border-radius: $border-l;
     max-width: $container;
     box-shadow: $shadow-1;

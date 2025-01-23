@@ -5,7 +5,7 @@ import { Row } from "./Row";
 
 export const Table = () => {
     return (
-        <table>
+        <table className={styles.table}>
             <thead>
                 <tr>
                     <th>
@@ -42,21 +42,7 @@ export const Table = () => {
                 {data.map((item, index) => (
                     <Row key={item.id} item={item} index={index} />
                 ))}
-                {data.map((item, index) => (
-                    <Row key={item.id} item={item} index={index} />
-                ))}
-                {data.map((item, index) => (
-                    <Row key={item.id} item={item} index={index} />
-                ))}
-                {data.map((item, index) => (
-                    <Row key={item.id} item={item} index={index} />
-                ))}
-                {data.map((item, index) => (
-                    <Row key={item.id} item={item} index={index} />
-                ))}
-                {data.map((item, index) => (
-                    <Row key={item.id} item={item} index={index} />
-                ))}
+                <tr className={styles.spacer}></tr>
             </tbody>
         </table>
     );

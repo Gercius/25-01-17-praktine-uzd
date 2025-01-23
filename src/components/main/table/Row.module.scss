@@ -1,7 +1,7 @@
 @use "../../../styles/mixins" as *;
 @use "../../../styles/variables" as *;
 
-tbody tr {
+.tr {
     &:nth-of-type(2n + 1) {
         background-color: $bg-light;
     }
@@ -19,16 +19,47 @@ tbody tr {
 
     .description {
         @include typography("body-b2");
-        color: $font-gray-400;
+        color: $font-gray-500;
     }
 
     .status {
         @include typography("caption-c1");
+        span {
+            // width: 10px;
+            padding: 0.15rem 0.625rem;
+            border-radius: $border-l;
+
+            &.open {
+                background-color: $bg-gray-200;
+                color: $font-blue;
+            }
+            &.paid {
+                background-color: $bg-light-green;
+                color: $font-green;
+            }
+            &.inactive {
+                background-color: $bg-gray-300;
+                color: $font-gray-400;
+            }
+            &.due {
+                background-color: $bg-light-red;
+                color: $font-red;
+            }
+        }
     }
 
     .rate,
     .balance,
     .deposit {
         @include typography("body-number");
+        color: $font-gray-500;
+    }
+
+    .balance {
+        color: $font-green;
+
+        &.negative {
+            color: $font-red;
+        }
     }
 }

@@ -3,7 +3,7 @@ import { Table } from "./table/Table";
 
 export const Main = () => {
     return (
-        <main>
+        <main className={styles.main}>
             <Table />
         </main>
     );
