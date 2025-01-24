@@ -1,6 +1,7 @@
 @use "../../styles/variables" as *;
 
 #root {
+    position: relative;
     background-color: $bg-gray-transparent;
     margin: 5rem auto 0 auto;
     position: relative;

@@ -1,9 +1,8 @@
 import styles from "./Table.module.scss";
 import arrowIcon from "../../../assets/arrow.svg";
-import { data } from "../../../data/data";
 import { Row } from "./Row";
 
-export const Table = () => {
+export const Table = ({ tableData }) => {
     return (
         <table className={styles.table}>
             <thead>
@@ -39,7 +38,7 @@ export const Table = () => {
                 </tr>
             </thead>
             <tbody>
-                {data.map((item, index) => (
+                {tableData.map((item, index) => (
                     <Row key={item.id} item={item} index={index} />
                 ))}
                 <tr className={styles.spacer}></tr>

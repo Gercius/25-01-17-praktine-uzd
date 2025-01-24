@@ -1,0 +1,26 @@
+.formDialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .addForm {
+        padding: 2rem;
+        background: black;
+        color: white;
+
+        label {
+            display: block;
+        }
+
+        .formField {
+        }
+
+        .formButtons {
+            button {
+                background-color: gray;
+                color: whitesmoke;
+            }
+        }
+    }
+}
