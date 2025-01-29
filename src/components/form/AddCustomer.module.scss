@@ -1,25 +1,72 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 .formDialog {
+    background-color: $bg-gray-100;
+    backdrop-filter: $blur-1;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: none;
+    border-radius: $border-m;
+    box-shadow: $shadow-3;
+    @include typography("body-b2");
+    width: 300px;
+    max-width: 100%;
 
     .addForm {
-        padding: 2rem;
-        background: black;
-        color: white;
+        width: 100%;
+        padding: 1rem 2rem;
 
         label {
+            margin: 0.5rem 0 0.25rem 0;
             display: block;
         }
 
         .formField {
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                height: 32px;
+                padding: 0 0.75rem;
+                background-color: $bg-light;
+                border-radius: $border-m;
+                box-shadow: $shadow-3;
+                display: flex;
+                align-items: center;
+                column-gap: 0.5rem;
+            }
+
+            textarea {
+                padding: 0.25rem 0.5rem;
+                height: 5rem;
+                resize: none;
+            }
         }
 
         .formButtons {
+            margin-top: 1rem;
+            display: flex;
+            column-gap: 1rem;
+
             button {
-                background-color: gray;
-                color: whitesmoke;
+                @include typography("button");
+                color: $font-light;
+                border-radius: $border-m;
+                cursor: pointer;
+                width: 80px;
+                height: 32px;
+                text-align: center;
+            }
+
+            button:nth-child(1) {
+                background-color: $bg-green;
+            }
+
+            button:nth-child(2) {
+                background-color: $bg-red;
             }
         }
     }

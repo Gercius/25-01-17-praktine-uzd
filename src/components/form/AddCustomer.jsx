@@ -55,7 +55,7 @@ const AddCustomer = ({ isFormOpen, setIsFormOpen, handleFormData }) => {
                     <input onChange={handleChange} value={formData.name} type="text" name="name" />
                 </div>
                 <div className={styles.formField}>
-                    <label htmlFor="description">description</label>
+                    <label htmlFor="description">Description</label>
                     <textarea onChange={handleChange} name="description"></textarea>
                 </div>
                 <div className={styles.formField}>
